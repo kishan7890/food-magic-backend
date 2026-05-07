@@ -18,7 +18,7 @@ const app = express()
 
 app.use(express.json());
 app.use(cors({
-  origin: "https://food-magic-frontend.vercel.app/",
+  origin: "https://food-magic-frontend.vercel.app",
   credentials: true
 }))
 app.use(cookieparser());
