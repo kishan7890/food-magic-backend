@@ -32,7 +32,7 @@ app.use("/api/delivery", deliveryRoutes)
 app.use("/api/cart",CartRoutes)
 app.use("/api/address",addressRoute)
 
-const PORT = 5000
+const PORT = process.env.PORT
 
 app.listen(PORT, () => {
   console.log("Server running on port", PORT)
